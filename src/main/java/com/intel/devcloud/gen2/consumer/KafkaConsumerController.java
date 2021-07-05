@@ -27,7 +27,7 @@ public class KafkaConsumerController {
         properties.put("session.timeout.ms", "30000");*/
 
 		KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(properties);
-		kafkaConsumer.subscribe(Collections.singletonList("core"));
+		kafkaConsumer.subscribe(Collections.singletonList("celeron"));
 		boolean process = Boolean.FALSE;
 		System.out.println("************ kafka Consumer **********");
 		try{
