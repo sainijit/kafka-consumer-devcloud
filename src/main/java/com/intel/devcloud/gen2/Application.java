@@ -1,6 +1,6 @@
-package org.redhat.kafka;
+package com.intel.devcloud.gen2;
 
-import org.redhat.kafka.consumer.KafkaConsumerController;
+import com.intel.devcloud.gen2.consumer.KafkaConsumerController;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

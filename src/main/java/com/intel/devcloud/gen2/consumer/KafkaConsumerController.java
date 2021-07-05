@@ -1,4 +1,4 @@
-package org.redhat.kafka.consumer;
+package com.intel.devcloud.gen2.consumer;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -27,7 +27,7 @@ public class KafkaConsumerController {
         properties.put("session.timeout.ms", "30000");*/
 
 		KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(properties);
-		kafkaConsumer.subscribe(Collections.singletonList("my-topic"));
+		kafkaConsumer.subscribe(Collections.singletonList("core"));
 		boolean process = Boolean.FALSE;
 		System.out.println("************ kafka Consumer **********");
 		try{
